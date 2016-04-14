@@ -4,6 +4,7 @@
     "description": "A Symfony2 bundle for working with the PDFCrowd API",
     "keywords": ["pdfcrowd", "pdf"],
     "homepage": "https://github.com/hirengosalia86/HirenPDFCrowdBundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "Hiren Gosalia",
