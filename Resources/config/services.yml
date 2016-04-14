@@ -1,5 +1,5 @@
 parameters:
-    amp_pdf_crowd.api.class: Hiren\PDFCrowdBundle\Lib\PDFCrowd
+    hiren_pdf_crowd.api.class: Hiren\PDFCrowdBundle\Lib\PDFCrowd
 
 services:
     hiren_pdf_crowd.api:
