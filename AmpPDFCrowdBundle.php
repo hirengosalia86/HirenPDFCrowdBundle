@@ -1,9 +1,9 @@
 <?php
 
-namespace Amp\PDFCrowdBundle;
+namespace Hiren\PDFCrowdBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class AmpPDFCrowdBundle extends Bundle
+class HirenPDFCrowdBundle extends Bundle
 {
 }
