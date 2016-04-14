@@ -1,14 +1,13 @@
 {
-    "name": "amp/pdfcrowd-bundle",
+    "name": "hiren/pdfcrowd-bundle",
     "type": "symfony-bundle",
     "description": "A Symfony2 bundle for working with the PDFCrowd API",
     "keywords": ["pdfcrowd", "pdf"],
-    "homepage": "https://github.com/hubertperron/AmpPDFCrowdBundle",
-    "license": "MIT",
+    "homepage": "https://github.com/hirengosalia86/HirenPDFCrowdBundle",
     "authors": [
         {
-            "name": "Hubert Perron",
-            "email": "hubert.perron@gmail.com"
+            "name": "Hiren Gosalia",
+            "email": "hirengosalia86@gmail.com"
         }
     ],
     "repositories": [
@@ -16,9 +15,9 @@
             "type": "package",
             "package": {
                 "name": "pdfcrowd/pdfcrowd-php",
-                "version": "2.5",
+                "version": "2.6",
                 "dist": {
-                    "url": "http://pdfcrowd.com/static/clients/php/pdfcrowd-2.5-php.zip",
+                    "url": "http://pdfcrowd.com/static/clients/php/pdfcrowd-2.6-php.zip",
                     "type": "zip"
                 },
                 "autoload": {
@@ -28,11 +27,11 @@
         }
     ],
     "require": {
-        "pdfcrowd/pdfcrowd-php": "2.5",
+        "pdfcrowd/pdfcrowd-php": "2.6",
         "symfony/symfony": "2.*"
     },
     "autoload": {
-        "psr-0": { "Amp\\PDFCrowdBundle": "" }
+        "psr-0": { "Hiren\\PDFCrowdBundle": "" }
     },
-    "target-dir": "Amp/PDFCrowdBundle"
+    "target-dir": "Hiren/PDFCrowdBundle"
 }
