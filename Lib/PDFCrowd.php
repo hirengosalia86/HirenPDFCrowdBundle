@@ -1,6 +1,6 @@
 <?php
 
-namespace Amp\PDFCrowdBundle\Lib;
+namespace Hiren\PDFCrowdBundle\Lib;
 
 use \PdfCrowd as Base;
 
