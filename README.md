@@ -1,9 +1,7 @@
-AmpPDFCrowdBundle
+HirenPDFCrowdBundle
 =================
 
 This bundle act as a thin wrapper over the PDFCrowd API to ease integration with Symfony.
-
-[![Build Status](https://secure.travis-ci.org/hubertperron/AmpPDFCrowdBundle.png)](http://travis-ci.org/hubertperron/AmpPDFCrowdBundle)
 
 ## Installation
 
@@ -15,9 +13,9 @@ This bundle act as a thin wrapper over the PDFCrowd API to ease integration with
                 "type": "package",
                 "package": {
                     "name": "pdfcrowd/pdfcrowd-php",
-                    "version": "2.5",
+                    "version": "2.6",
                     "dist": {
-                        "url": "http://pdfcrowd.com/static/clients/php/pdfcrowd-2.5-php.zip",
+                        "url": "http://pdfcrowd.com/static/clients/php/pdfcrowd-2.6-php.zip",
                         "type": "zip"
                     },
                     "autoload": {
@@ -27,7 +25,7 @@ This bundle act as a thin wrapper over the PDFCrowd API to ease integration with
             }
         ],
         "require": {
-            "amp/pdfcrowd-bundle": "dev-master"
+            "hiren/pdfcrowd-bundle": "dev-master"
         }
     }
 
@@ -39,7 +37,7 @@ public function registerBundles()
 {
     return array(
         // ...
-        new Amp\PDFCrowdBundle\AmpPDFCrowdBundle(),
+        new Hiren\PDFCrowdBundle\AmpPDFCrowdBundle(),
         // ...
     );
 }
@@ -48,7 +46,7 @@ public function registerBundles()
 ## Configuration
 
 ``` yaml
-amp_pdf_crowd:
+hiren_pdf_crowd:
     username: your-username
     apikey: the-api-key
 ```
@@ -58,17 +56,11 @@ amp_pdf_crowd:
 ### Controller
 
 ``` php
-$pdfCrowd = $this->get('amp_pdf_crowd.api');
+$pdfCrowd = $this->get('hiren_pdf_crowd.api');
 $url = $this->generateUrl('route_name', array(), true);
 
 $pdfData = $pdfCrowd->convertURI($url);
 $fileName = $this->container->getParameter('kernel.root_dir') . '/../web/pdfs/example.pdf';
 
 file_put_contents($fileName, $pdfData); // Make sure this directory is writable
-```
-
-### Command
-
-``` bash
- $ app/console pdfcrowd:convert https://github.com/hubertperron/AmpPDFCrowdBundle web/pdfs/example.pdf
 ```
