@@ -1,7 +1,7 @@
 parameters:
-    amp_pdf_crowd.api.class: Amp\PDFCrowdBundle\Lib\PDFCrowd
+    amp_pdf_crowd.api.class: Hiren\PDFCrowdBundle\Lib\PDFCrowd
 
 services:
-    amp_pdf_crowd.api:
-        class: %amp_pdf_crowd.api.class%
-        arguments: [ %amp_pdf_crowd.username%, %amp_pdf_crowd.apikey% ]
+    hiren_pdf_crowd.api:
+        class: %hiren_pdf_crowd.api.class%
+        arguments: [ %hiren_pdf_crowd.username%, %hiren_pdf_crowd.apikey% ]
