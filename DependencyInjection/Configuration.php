@@ -1,6 +1,6 @@
 <?php
 
-namespace Amp\PDFCrowdBundle\DependencyInjection;
+namespace Hiren\PDFCrowdBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('amp_pdf_crowd');
+        $rootNode = $treeBuilder->root('hiren_pdf_crowd');
 
         $rootNode
             ->children()
